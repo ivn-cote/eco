@@ -5,6 +5,7 @@
   "module": "src/index.js",
   "main": "build/index.js",
   "scripts": {
+    "babel": "babel src/index.js --out-file transpiled.js",
     "build": "NODE_ENV=production node rollup.js"
   },
   "devDependencies": {

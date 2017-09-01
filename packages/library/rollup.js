@@ -4,7 +4,9 @@ const json = require('rollup-plugin-json');
 
 const defaultPlugins = [
   json(),
-  babel()
+  babel({
+    exclude: 'node_modules/*'
+  })
 ];
 
 const success = script => result => {
