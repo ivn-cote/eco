@@ -31,3 +31,5 @@ And additional setup for Babel
 ```
 
 *The problem* though is that there are too many polyfills.
+
+Once we need polyfill for library code, we already have it on SPA level.

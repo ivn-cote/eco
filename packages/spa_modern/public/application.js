@@ -3757,6 +3757,7 @@ define(String.prototype, "padRight", "".padEnd);
 
 exports.__esModule = true;
 var libraryGoody = exports.libraryGoody = function libraryGoody() {
+  var sign = Math.sign(-10);
   return 'oh dear';
 };
 
