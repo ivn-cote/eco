@@ -21,8 +21,8 @@ npm run setup
 
 In order to have polyfills, it includes also
 ```diff
-  + entry: ['babel-polyfill', './src/index.js'],
-  - entry: ['./src/index.js'],
++  entry: ['babel-polyfill', './src/index.js'],
+-  entry: ['./src/index.js'],
 ```
 And additional setup for Babel
 ```diff
