@@ -34,4 +34,4 @@ And additional setup for Babel
 
 Once we need polyfill for library code, we already have it on SPA level.
 
-Let's consider the second possible way of `library` using — as a prepared script. Rollup with proper plugins can assemble bundled version of the `library` with *all* polyfills.
+Let's consider the second possible way of `library` using — as a prepared script. Rollup with proper plugins can assemble bundled version of the `library` with *all* polyfills for chossen browsers in the `babel-env-plugin` config. You can change this list of browsers and get an updated build file.
