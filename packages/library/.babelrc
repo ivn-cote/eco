@@ -3,7 +3,7 @@
     ["env", {
       "modules": false,
       "loose": true,
-      "useBuiltIns": true,
+      "useBuiltIns": "usage",
       "debug": true,
       "targets": {
         "browsers": [
