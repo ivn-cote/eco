@@ -1,4 +1,3 @@
-import "babel-polyfill";
 import { libraryGoody } from 'library';
 
 const HELLO = 'HELLO WORLD';
