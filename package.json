@@ -1,0 +1,10 @@
+{
+  "name": "ololo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "setup": "cd ./packages/library && npm i && npm link && cd ../spa_modern && npm link library && npm i"
+  },
+  "author": "ivn",
+  "license": "ISC"
+}
