@@ -35,3 +35,5 @@ And additional setup for Babel
 Once we need polyfill for library code, we already have it on SPA level.
 
 Let's consider the second possible way of `library` using — as a prepared script. Rollup with proper plugins can assemble bundled version of the `library` with *all* polyfills for chossen browsers in the `babel-env-plugin` config. You can change this list of browsers and get an updated build file.
+
+`babel-env-plugin` will have ability of choosing polyfills in use later along with Babel7. see [discussion on GitHub](https://github.com/babel/babel-preset-env/pull/241) Experimental settings are in `babel7` branch.
