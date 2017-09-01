@@ -5,7 +5,6 @@
 }(this, (function (exports) { 'use strict';
 
 var libraryGoody = function libraryGoody() {
-  var sign = Math.sign(-10);
   return 'oh dear';
 };
 

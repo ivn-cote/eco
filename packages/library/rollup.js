@@ -15,20 +15,25 @@ const success = script => result => {
 
 const scripts = [
   { entry: 'src/index.js',
-    moduleName: 'Library',
-    dest: 'build/index.js'
+    name: 'Library',
+    file: 'build/index.js'
   }
 ];
 
-scripts.map(script => {
-  rollup.rollup({
-    entry: script.entry,
-    plugins: defaultPlugins
-  }).then(bundle => {
-    return bundle.write({
-      format: 'umd',
-      moduleName: script.moduleName,
-      dest: script.dest
-    });
-  }).then(success(script.moduleName)).catch(error => { console.error(error); });
-});
+scripts
+  .map(script => {
+    rollup
+      .rollup({
+        input: script.entry,
+        plugins: defaultPlugins
+      })
+      .then(bundle => {
+        return bundle.write({
+          format: 'umd',
+          name: script.name,
+          file: script.file
+        });
+      })
+      .then(success(script.name))
+      .catch(error => { console.error(error); });
+  });
