@@ -34,4 +34,4 @@ And additional setup for Babel
 
 Once we need polyfill for library code, we already have it on SPA level.
 
-Let's consider the second possible way of `library` using — as a prepared script. *Roolup failed to insert all required polyfills on the build stage.* Or maybe we are wrong with configuration.
+Let's consider the second possible way of `library` using — as a prepared script. Rollup with proper plugins can assemble bundled version of the `library` with *all* polyfills.
