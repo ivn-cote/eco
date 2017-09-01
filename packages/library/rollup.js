@@ -18,7 +18,7 @@ const success = script => result => {
 };
 
 const scripts = [
-  { entry: 'src/index.js',
+  { entry: 'index.js',
     name: 'Library',
     file: 'build/index.js'
   }

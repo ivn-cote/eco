@@ -84,8 +84,5 @@ import 'core-js/modules/web.immediate';
 import 'core-js/modules/web.dom.iterable';
 import 'regenerator-runtime/runtime';
 
-
-export var libraryGoody = function libraryGoody() {
-  var sign = Math.sign(-10);
-  return 'oh dear';
-};
+import { libraryGoody } from './src/index';
+export { libraryGoody };

@@ -3750,13 +3750,13 @@ define(String.prototype, "padRight", "".padEnd);
 
 /***/ }),
 /* 126 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "libraryGoody", function() { return libraryGoody; });
 
-
-exports.__esModule = true;
-var libraryGoody = exports.libraryGoody = function libraryGoody() {
+var libraryGoody = function libraryGoody() {
   var sign = Math.sign(-10);
   return 'oh dear';
 };
