@@ -6,13 +6,14 @@
   "main": "build/index.js",
   "scripts": {
     "babel": "babel ./index.js --out-file transpiled.js",
+    "babel:source": "babel ./src/index.js --out-file transpiled.src.js",
     "build": "NODE_ENV=production node rollup.js"
   },
   "devDependencies": {
-    "babel-cli": "^6.6.5",
-    "babel-core": "6.18.2",
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-env": "^1.5.2",
+    "@babel/cli": "^7.0.0-beta.34",
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/polyfill": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
     "rollup": "^0.49.2",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.0",
