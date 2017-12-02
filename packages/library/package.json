@@ -2,11 +2,10 @@
   "name": "library",
   "version": "1.0.0",
   "description": "",
-  "module": "src/index.js",
+  "module": "esmodule/index.js",
   "main": "build/index.js",
   "scripts": {
-    "babel": "babel ./index.js --out-file transpiled.js",
-    "babel:source": "babel ./src/index.js --out-file transpiled.src.js",
+    "babel": "babel ./index.js --out-file esmodule/index.js && babel src --out-dir esmodule/src",
     "build": "NODE_ENV=production node rollup.js"
   },
   "devDependencies": {
