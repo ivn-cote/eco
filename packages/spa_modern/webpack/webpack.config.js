@@ -22,10 +22,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [
-          path.resolve(BASE_PATH, 'src'),
-          // This module is published as ES2015 and must be transpiled
-          path.resolve(BASE_PATH, 'node_modules/library'),
-          path.resolve(BASE_PATH, '../library')
+          path.resolve(BASE_PATH, 'src')
         ]
       },
       {
