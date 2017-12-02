@@ -10,7 +10,7 @@ const BASE_PATH = path.join(__dirname, '..');
 
 module.exports = {
   context: BASE_PATH,
-  entry: ['babel-polyfill', './src/index.js'],
+  entry: ['./src/index.js'],
   output: {
     path: path.join(BASE_PATH, 'public'),
     filename: 'application.js',
