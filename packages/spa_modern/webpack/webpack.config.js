@@ -10,7 +10,7 @@ const BASE_PATH = path.join(__dirname, '..');
 
 module.exports = {
   context: BASE_PATH,
-  entry: ['babel-polyfill', './src/index.js'],
+  entry: ['./src/index.js'],
   output: {
     path: path.join(BASE_PATH, 'public'),
     filename: 'application.js',
@@ -22,10 +22,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [
-          path.resolve(BASE_PATH, 'src'),
-          // This module is published as ES2015 and must be transpiled
-          path.resolve(BASE_PATH, 'node_modules/library'),
-          path.resolve(BASE_PATH, '../library')
+          path.resolve(BASE_PATH, 'src')
         ]
       },
       {
